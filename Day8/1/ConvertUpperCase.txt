@@ -1,0 +1,14 @@
+import java.util.stream.Stream;
+
+
+public class ConvertToUppercase {
+    public static void main(String[] args) {
+        Stream<String> names = Stream.of("aBc", "d", "ef");
+
+        Stream<String> upperCaseNames = names.map(String::toUpperCase);
+
+        upperCaseNames.forEach(System.out::println);
+    }
+
+
+}
