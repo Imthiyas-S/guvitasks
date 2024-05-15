@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .event-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+        .event-image img {
+            background-color: #ddd;
+            height: auto;
+            width: 200px;
+            margin-bottom: 15px;
+        }
+        .event-date {
+            font-weight: bold;
+            color: #333;
+        }
+        .available-seats{
+            color: #007bff;
+        }
+        .sold-out {
+            color: red;
+        }
+        .book-now-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+     
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 50%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search Events">
+    </div>
+    <div class="container">
+        <!-- Event 1 -->
+        <div class="event-card">
+            <h2>Conferences</h2>
+            <div class="event-image"><img src="images/1.jpeg" alt="Image"></div>
+            <p class="event-date">23-May-2020</p>
+            <p class="available-seats">Available seats: 23</p>
+            
+            <button class="book-now-btn" onclick="window.location.href='form.html'">Book Now</button>
+
+            
+        </div>
+        <!-- Repeat for other events -->
+        <!-- Event 2 -->
+        <div class="event-card">
+            <h2>Trade shows</h2>
+            <div  class="event-image" ><img src="images/2.jpeg" alt="Image"></div>
+            <p class="event-date">23-May-2020</p>
+            <p class="available-seats">Available seats: 23</p>
+            <button class="book-now-btn" onclick="window.location.href='form.html'">Book Now</button>
+        </div>
+        <!-- Event 3 -->
+        <div class="event-card">
+            <h2>Networking events</h2>
+            <div class="event-image"><img src="images/3.jpg" alt="Image"></div>
+            <p class="event-date">23-May-2020</p>
+            <p class="available-seats">Available seats: 0</p>
+            <p class="sold-out">Sold Out</p>
+            
+        </div>
+        <!-- Event 4 -->
+        <div class="event-card">
+            <h2>Workshops</h2>
+            <div class="event-image"><img src="images/4.jpeg" alt="Image"></div>
+            <p class="event-date">23-May-2020</p>
+            <p class="available-seats">Available seats: 23</p>
+            <button class="book-now-btn" onclick="window.location.href='form.html'">Book Now</button>
+        </div>
+        <!--5-->
+        <div class="event-card">
+            <h2>Team building events</h2>
+            <div class="event-image"><img src="images/5.png" alt="Image"></div>
+            <p class="event-date">23-May-2020</p>
+            <p class="available-seats">Available seats: 23</p>
+            <button class="book-now-btn" onclick="window.location.href='form.html'">Book Now</button>
+        </div>
+        <!-- Repeat for other events -->
+        <!-- Event 6 -->
+        <div class="event-card">
+            <h2>Product launch events</h2>
+            <div class="event-image"><img src="images/6.png" alt="Image"></div>
+            <p class="event-date">23-May-2020</p>
+            <p class="available-seats">Available seats: 0</p>
+            <p class="sold-out">Sold Out</p>
+           
+        </div>
+        <!-- Event 7 -->
+        <div class="event-card">
+            <h2> Charity events</h2>
+            <div class="event-image"><img src="images/7.jpg" alt="Image"></div>
+            <p class="event-date">23-May-2020</p>
+            <p class="available-seats">Available seats: 23</p>
+            <button class="book-now-btn" onclick="window.location.href='form.html'">Book Now</button>
+        </div>
+        <!-- Event 8 -->
+        <div class="event-card">
+            <h2> Internal corporate events</h2>
+            <div class="event-image"><img src="images/8.jpg" alt="Image"></div>
+            <p class="event-date">23-May-2020</p>
+            <p class="available-seats">Available seats: 23</p>
+            <button class="book-now-btn" onclick="window.location.href='form.html'">Book Now</button>
+        </div>
+        
+    </div>
+</body>
+</html>

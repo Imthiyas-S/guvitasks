@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Event details -->
+       
+
+        <!-- Booking form -->
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone No.:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="seats">Number of seats:</label>
+            <select id="seats">
+                <option value="2" selected>2</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="attendee2">Name of Attendee 2:</label>
+            <input type="text" id="attendee2">
+
+            <button type="submit" id="book-now-btn">Book Now</button>
+        </form>
+    </div>
+
+    <script>
+        // Handle form submission
+        document.getElementById('booking-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            
+            alert('Booking successful!'); 
+        });
+    </script>
+</body>
+</html>
