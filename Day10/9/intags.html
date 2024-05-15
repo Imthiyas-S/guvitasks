@@ -1,0 +1,57 @@
+<!--Task 9-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Default Form Elements</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+
+            input[type="text"],
+            textarea,
+            select,
+            input[type="date"],
+            input[type="time"],
+            input[type="number"]{
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+
+            }
+
+            input[type="checkbox"],
+            input[type="radio"]{
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" value="Default Text">
+        <br>
+        <textarea>Default Textarea</textarea>
+        <input type="checkbox" checked> checkbox
+        <br>
+        <input type="radio" name="gender" value="male" checked> male
+        <input type="radio" name="gender" value="female"> female
+        <br>
+        <select>
+            <option value="option1">Option 1</option>
+            <option value="option2" selected>Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <br>
+        <input type="date" value="2024-05-11">
+        <br>
+        <input type="time" value="12:00">
+        <br>
+        <input type="number" value="42">
+    </body>
+</html>
